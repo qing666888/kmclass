@@ -4,8 +4,8 @@
 
 [Version]
 Signature="$WINDOWS NT$"
-Class=Sample ; TODO: edit Class
-ClassGuid={78A1C341-4539-11d3-B88D-00C04FAD5171} ; TODO: edit ClassGuid
+Class=HIDClass ; TODO: edit Class
+ClassGuid={745a17a0-74d3-11d0-b6fe-00a0c90f57da} ; TODO: edit ClassGuid
 Provider=%ManufacturerName%
 CatalogFile=kmclass.cat
 DriverVer= ; TODO: set DriverVer in stampinf property pages
@@ -15,10 +15,6 @@ DefaultDestDir = 12
 kmclass_Device_CoInstaller_CopyFiles = 11
 
 ; ================= Class section =====================
-
-[ClassInstall32]
-Addreg=SampleClassReg
-
 [SampleClassReg]
 HKR,,,0,%ClassName%
 HKR,,Icon,,-5
